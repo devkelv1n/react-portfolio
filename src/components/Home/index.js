@@ -40,7 +40,7 @@ const Home = () => {
                     />
                     </h1>
                     <h2>Backend Developer / JavaScript Intermediate / Site Supervisor / Customer Service & Account compliance Binance</h2>
-                    <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    <Link to="/react-portfolio/contact" className="flat-button">CONTACT ME</Link>
                 </div>
 
             </div>
