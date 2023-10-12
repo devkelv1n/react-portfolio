@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
+import Pdf from '../../assets/documents/kelvin-resume-2023.pdf';
 
 
 const Home = () => {
@@ -40,7 +41,9 @@ const Home = () => {
                     />
                     </h1>
                     <h2>Backend Developer / JavaScript Intermediate / Site Supervisor / Customer Service & Account compliance Binance</h2>
-                    <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    <Link to="/react-portfolio/contact" className="flat-button">CONTACT ME</Link>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href={Pdf} target="_blank" rel="noreferrer" className="flat-button">Resume PDF</a>
                 </div>
 
             </div>

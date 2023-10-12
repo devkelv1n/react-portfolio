@@ -46,7 +46,7 @@
             }
 
             &:hover {
-                color: #ffd700;
+                color: #80ffdb;
 
                 svg {
                     opacity: 0;
@@ -72,7 +72,7 @@
             }
 
             &:first-child {
-                &::after{
+                &:after{
                     content: 'HOME';
                 }
             }
@@ -92,7 +92,7 @@
 
         a.active {
             svg {
-                color: #ffd700;
+                color: #80ffdb;
             }
         }
     }
@@ -115,10 +115,69 @@
                 line-height: 16px;
 
                 &:hover svg {
-                    color: #ffd700;
+                    color: #80ffdb;
                 }
 
             }
         }
     }
 }
+
+.hamburger-icon, .close-icon {
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+    .nav-bar { 
+      background: transparent;
+      position: fixed;
+      top: 0;
+      height: 40px;
+      min-height: auto;
+  
+       ul, nav {
+        display: none;
+       }
+  
+       nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #181818;
+        height: 100%;
+        margin: 0;
+        z-index: 2;
+        position: fixed;
+  
+        &.mobile-show {
+          display: block;
+        }
+  
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        a:after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 10PX;
+        }
+  
+        a svg {
+          opacity: 1 !important;
+        }
+       }
+  
+       .hamburger-icon,
+       .close-icon {
+          position: fixed;
+          top: 15px;
+          right: 15px;
+          display: block;
+       }
+    }
+  }
