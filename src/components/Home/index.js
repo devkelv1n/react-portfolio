@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
-import Pdf from '../../assets/documents/kelvin-resume-2023.pdf';
+import Pdf from '../../assets/documents/kelvin-resume-2023-v1.pdf';
 
 
 const Home = () => {
